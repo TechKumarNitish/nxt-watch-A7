@@ -115,12 +115,14 @@ class VideoItemDetails extends Component {
     const {theme} = this.props
     return (
       <div className="w-full bg-inherit md:p-7">
-        <ReactPlayer
-          url={videoDetails.videoUrl}
-          width="100%"
-          height="550px"
-          controls
-        />
+        <div className="h-[200px] sm:h-[400px] lg:h-[500px] xl:h-[700]">
+          <ReactPlayer
+            url={videoDetails.videoUrl}
+            width="100%"
+            height="100%"
+            controls
+          />
+        </div>
 
         <div className="p-4 md:pl-0">
           <p
